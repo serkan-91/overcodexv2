@@ -147,7 +147,7 @@ section {
 
 }
     #carier > h2 {
-        background-image: linear-gradient(45deg, #000, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), #000);
+        background-image: linear-gradient(45deg, #000, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4), #000);
     }
 
 
@@ -157,15 +157,16 @@ section {
 }
 
     #works > h2 {
-        background-image: linear-gradient(45deg, #000, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), #000);
+        background-image: linear-gradient(45deg, #000, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2), #000);
     }
 
 #tech {
     background-image: url("/images/langs.png");
+    background-size: contain;
 }
 
     #tech > h2 {
-        background-image: linear-gradient(45deg, #000, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), #000);
+        background-image: linear-gradient(45deg, #000, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6), #000);
     }
 
 #about {
