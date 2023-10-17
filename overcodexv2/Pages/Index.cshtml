@@ -1,0 +1,115 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = " ";
+}
+<link href="~/css/site.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+<a href="~/lib/bootstrap/dist/css/bootstrap.min.css.map">~/lib/bootstrap/dist/css/bootstrap.min.css.map</a>
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/css/fontawesome-free-6.4.2-web/css/all.min.css" rel="stylesheet" />
+<link href="~/css/fontawesome-free-6.4.2-web/css/fontawesome.css" rel="stylesheet" />
+<link href="~/css/fontawesome-free-6.4.2-web/css/fontawesome.min.css" rel="stylesheet" />
+<link href="~/css/fontawesome-free-6.4.2-web/css/solid.css" rel="stylesheet" />
+<link href="~/css/fontawesome-free-6.4.2-web/css/solid.min.css" rel="stylesheet" />
+<body>
+
+    <header>
+        <div class="menu-icon" >☰</div>
+        <nav id="slide-menu"   >
+            <div><img src="images/logo-light.png" width="70" height="70" /></div>
+            <a href="#home">AnaSayfa</a>
+            <a href="#services">Hizmetler ve Çözümlerimiz</a>
+            <a href="#works">Yaptıgımız İşler</a>
+            <a href="#tech">Teknolojilerimiz</a>
+            <a href="#about">Hakkımızda</a>
+            <a href="#carier">Kariyer</a>
+            <a href="#contact">Bize Ulaşın</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <section id="home" class="bg-img">
+            <h2><img src="/images/logo-light.png " height="100%" style="opacity:0.2" /></h2>
+        </section>
+        <section id="services">
+            <h2>Hizmetler ve Çözümlerimiz</h2>
+        </section>
+        <section id="works">
+            <h2>Neler Yapıyoruz</h2>
+        </section>
+        <section id="tech">
+            <h2>Teknolojilerimiz</h2>
+        </section>
+        <section id="about">
+            <h2>Hakkımızda</h2>
+        </section>
+        <section id="carier">
+            <h2>Kariyer</h2>
+        </section>
+        <section class="flex-column"   id="contact">
+            <h2>Bize Ulaşın</h2>
+            <div class="container   "   >
+                <div class="col-12 flex-row d-flex text-center">
+                    <div class="col-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1313.5795669406293!2d27.115266851476992!3d38.45910484797486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd9c89440b1e9%3A0x3110b37ef0dbc925!2zQmFoYXJpeWUsIFrDvGJleWRlIEhhbsSxbSBDZC4gTm86MjgvNSwgMzU2MDAgS2FyxZ_EsXlha2EvxLB6bWly!5e0!3m2!1str!2str!4v1697528423720!5m2!1str!2str"
+                                width="100%"   style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    </div>
+                    <div class="col-6">
+                        <p class="w3-center w3-large"> Bize Mesaj gonder</p>
+                        <p><i class="fa  fa-map-location-dot"></i> Türkiye, TR</p>
+
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // function toggleMenu() {
+        //     var nav = document.querySelector('nav');
+        //     nav.classList.toggle('active');
+        // }
+        $(document).ready(function () {
+            // Sayfa yüklendiğinde genişlik kontrolü yap
+            checkWidth();
+
+            // Sayfa boyutu değiştiğinde kontrolü tekrar yap
+            $(window).resize(function () {
+                checkWidth();
+            });
+
+            $(".menu-icon").click(function () {
+                $("#slide-menu").slideToggle();
+            });
+
+            // Genişliğe göre menüyü göster/gizle
+            function checkWidth() {
+                var windowWidth = $(window).width();
+                if (windowWidth > 768) {
+                    // Büyükse, menüyü göster
+                    $("#slide-menu").show();
+                } else {
+                    // Küçükse, menüyü gizle
+                    $("#slide-menu").hide();
+                }
+            }
+        });
+    </script> 
+
+</body>
+<script>
+    window.onscroll = function () {
+        var nav = document.querySelector("nav");
+        if (window.pageYOffset > 0) {
+            nav.classList.add("sticky");
+        } else {
+            nav.classList.remove("sticky");
+        }
+    };
+
+</script> 
