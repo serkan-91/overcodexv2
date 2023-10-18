@@ -9,6 +9,9 @@
         crossorigin="anonymous"></script>
 <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+<script src="~/bootstrap/js/bootstrap.bundle.min.js"></script>
 <body>
 
     <header>
@@ -25,22 +28,198 @@
         </nav>
     </header>
 
-    <div class="content">
+    <div class="content" style="">
         <section id="home" class="bg-img">
-            <h2><img src="/images/logo-light.png " height="100%" style="opacity:0.2" /></h2>
+            <h2><img src="/images/logo-light.png " style="opacity:0.2; height:100%" /></h2>
         </section>
-        <section id="services">
-            <h2>Hizmetler ve Çözümlerimiz</h2>
+        <section id="services" class="flex-column">
+            <div style="width: 100%; overflow: hidden;">
+                <!-- Carousel -->
+                <div id="carousel-example" class="carousel slide" data-bs-ride="carousel">
+
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carousel-example" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carousel-example" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carousel-example" data-bs-slide-to="2"></li>
+                        <li data-bs-target="#carousel-example" data-bs-slide-to="3"></li>
+                        <li data-bs-target="#carousel-example" data-bs-slide-to="4"></li>
+                        <li data-bs-target="#carousel-example" data-bs-slide-to="5"></li>
+                        <li data-bs-target="#carousel-example" data-bs-slide-to="6"></li>
+                        <li data-bs-target="#carousel-example" data-bs-slide-to="7"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active " style="font-size:large">
+                            <img src="/images/webapp.png" class="d-block w-100 " alt="slide-img-0" style="object-fit: fill; height:100Vh; opacity:0.6">
+                            <div class="carousel-caption d-none d-md-block text-warning">
+                                <h4>
+                                    WEB YAZILIMLARI
+                                </h4>
+                                <h5>
+                                    Son Teknolojiyi Kullanarak Kullanıcı Dostu Dijital Deneyimler Sunuyoruz
+                                </h5>
+                                <p>
+                                    Tüketicilerin çevrimiçi olarak her türlü bilgi, hizmet ve ürüne ulaştığı bu teknoloji tabanlı çağda, web siteleri ticari pazarlamanın en önemli bileşeni haline geldi. Bu son derece rekabetçi dünyada, sahip olabileceğiniz en büyük güç, benzersizlik. İhtiyaçlarınızı karşılamak ve ziyaretçileriniz için sorunsuz bir kullanıcı deneyimi oluşturmak için sitenizi tüm yönleriyle özelleştiriyoruz. Sadece güzel değil, aynı zamanda kullanıcı dostu, uyumlu ve arama motorları, mobil ve masaüstü için optimize edilmiş web siteleri oluşturuyoruz. İster basit bir bilgilendirici web sitesi, ister eksiksiz bir e-ticaret sitesi olsun, her işimizde kanıtlanmış web sitesi tasarım stratejilerini kullanıyoruz.
+                                    Harika bir websitesinin, güzel bir vitrinden çok daha fazlası olduğuna inanıyoruz. Web uygulamaları, satışları artırmak, müşterilerle etkileşim kurmak veya markanın mesajını iletmek konusunda, işletmelerin hedeflerine ulaşmalarına yardımcı olan stratejik araçlardır. Bu anlayıştan yola çıkarak, konsept aşamasından lansman sürecine ve ötesine kadar eksiksiz bir yelpazede web uygulama çözümleri sunuyoruz.
+                                    Müşteri deneyiminizi dönüştürmeyi, dijital stratejinizi geliştirmeyi veya yeni büyümeler kaydetmeyi hedefliyorsanız, doğru yerdesiniz. Bu dünyanın tüm karmaşık yönlerine hakim olan, kapsamlı deneyime ve bilgiye sahip ekibimizle web uygulamaları geliştirme sürecine sizinle birlikte yol alıyor, sağlam mimarisi aracılığıyla mükemmel bir deneyim sunan, temiz, akılcı ve ilgi çekici web uygulamaları tasarlıyoruz.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="font-size:large">
+                            <img src="/images/mobileapp.png" class="d-block w-100  " alt="slide-img-2" style="object-fit: fill;  height:100Vh; opacity:0.6">
+                            <div class="carousel-caption d-none d-md-block text-warning">
+                                <h4>MOBİL YAZILIMLAR</h4>
+                                <h5>
+                                    Hedef Kitlenize Her Yerden Ulaşın
+                                </h5>
+                                <p style="font-size:large">
+                                    Günümüzde kullanıcılar mobil cihazlar aracılığıyla giderek daha fazla içerik tüketme eğilimi gösteriyor. Geniş bir havuzda dikkat çekmek için yarışan bu kadar çok uygulama varken kullanıcılarınızın günlük yaşamlarının bir parçası haline gelen ilgi çekici deneyimler tasarlayıp sunarak uygulamanızın öne çıkmasına yardımcı oluyoruz.
+                                    Mobil uygulamanız, masaüstü sitenizin yalnızca küçük bir versiyonundan çok daha fazlasıdır. Mobil uygulamalar, küçük bir alanda çok şey iletmek zorundadır. Uzmanlığımızla, markanızın ilgi çekici, sonuç odaklı bir mobil varlığa sahip olmasına yardımcı oluyoruz. İşletmeniz, ait olduğunuz sektör ve hedef kitleniz hakkında fikir edinmek için araştırmalar yapıyor, esnekliğe ve kullanıcı dostu olmaya odaklanan efektif uygulamalar tasarlıyoruz.
+                                    Mobil pazarlamanın benzersiz talepleri ve zorluklarını aşmanıza yardımcı olmak için buradayız. Her zaman ilgi çekici deneyimler arayan kullanıcılar için alışkanlıklar oluşturmak ve markanızla kurdukları bağı sürdürmek için kullanıcı dostu, uyumlu ve hem iOS hem de Android için optimize edilmiş uygulama çözümleri sunuyoruz. Son teknolojileri ve tasarım trendlerini kullanarak eksiksiz bir mobil uygulama tasarım hizmetleri yelpazesi sunarken sürdürülebilir destek ve bakım hizmetlerimizle uygulamanızın güncel kalmasını ve en iyi performansı göstermesini sağlıyoruz.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" style="font-size:large">
+                            <img src="/images/gamedev.png" class="d-block w-100"  style="object-fit: fill;  height:100Vh; opacity:0.6" />
+                            <div class="carousel-caption d-none d-md-block text-warning">
+                                <h4>MOBİL OYUN</h4>
+                                <h5>
+                                    Benzersiz Deneyimler Tasarlıyoruz
+                                </h5>
+                                <p>
+                                    Markanız, ürününüz ya da hizmetinizle ilgili iOS ve Android platformları için oyunlar geliştirmek istiyorsanız doğru yerdesiniz. Son teknolojileri ve tasarım trendlerini kullanarak eğlenceli, bağımlılık yaratan, görsel olarak çarpıcı ve hem iOS hem de Android için optimize edilmiş yüksek performanslı mobil oyunlar geliştiriyoruz.
+                                    Deneyimli oyun tasarımcıları ve geliştiricilerinden oluşan ekibimizle, benzersiz vizyonunuzu anlamak ve oyun fikirlerinizi gerçeğe dönüştürmek için sizinle yakın bir şekilde çalışıyor, oyunlaştırılmış deneyimler ve çığır açan kullanıcı etkileşimi ile iş ürünleri oluşturmamıza yardımcı oluyoruz.
+                                    Sürdürülebilir inovasyonun başarılı ürünler yaratmanın anahtarı olduğunu biliyoruz ve bu yüzden konsept çizimden bitmiş ürüne kadar oyununuzu tasarlamanıza ve geliştirmenize yardımcı olacak çok çeşitli mobil oyun geliştirme çözümlerini uyguluyoruz. Devam eden destek ve bakım hizmetlerimizle oyununuzun güncel kalmasını ve en iyi performansı göstermesini sağlıyoruz.
+
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="font-size:large">
+                            <img src="/images/solutiondecv.jpg" class="d-block w-100" alt="slide-img-2" style="object-fit: fill;  height:100Vh; opacity:0.6 " />
+                            <div class="carousel-caption d-none d-md-block text-warning">
+                                <h4>ÖZEL YAZILIM ÇÖZÜMLERİ</h4>
+                                <h5>
+                                    İhtiyaçlarınıza Göre Uyarlanmış Yenilikçi Yazılım Çözümleri
+
+                                </h5>
+                                <p>
+                                    İhtiyaç ve gereksinimlerinize göre tasarlanmış, üzerinde çalıştığımız her projenin benzersiz olmasını sağlayan özel yazılım çözümleri sunuyoruz. Kullanıcıların etkileşime girdiği front-end kanadından karmaşık kodlardan oluşan back-end programlamaya kadar, kullanıcı dostu, özelleştirilmiş yazılım hizmetleri için buradayız.
+                                    Markanıza, ürününüze ya da hizmetlerinize özel çözümler geliştirmek, gelişmiş verimlilik ve ürün ölçeklenebilirliği sağlar. Mevcut yazılım çözümleri standartlaştırılmış ihtiyaçlara uygun olabilir ancak öte yandan özelleştirilmiş çözümler firmanızı farklı bir boyuta taşıyacak ve performansınızı artıracaktır.
+                                    Özel yazılım geliştirme konusunda, mükemmel müşteri deneyimi sağlamak için uygulama özelleştirme, uygulama geri yükleme, uygulama yönetimi, teknik destek ve çok daha fazlası için yanınızdayız.
+
+
+
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="font-size:large">
+                            <img src="/images/e-commercedev.jpg" class="d-block w-100"   style="object-fit: fill;  height:100Vh; opacity:0.6   " />
+                            <div class="carousel-caption d-none d-md-block text-warning">
+                                <h4>
+                                    E-TİCARET UYGULAMALARI
+                                </h4>
+                                <h5>
+                                    Hedeflediğiniz Büyümeyi Yakalayın
+
+                                </h5>
+                                <p>
+                                    Müşterileriniz sepetlerini terk mi ediyor? Envanterinizin tozlanmaya başladığını mı düşünüyorsunuz? Piyasada birçok e-ticaret sitesi var. Kötü tasarlanmış bir mağaza kalabalığın arasından sıyrılamaz ve şirketinizin itibarına zarar verebilir. Öte yandan şık ve güçlü bir çevrimiçi mağaza, satış yapmanıza yardımcı olur.
+                                    Markanızla bütünleşen bir e-ticaret uygulaması, tutarlı bir görünüm, his ve üslupla ziyaretçileriniz arasında güven oluşturur ve bu da direkt olarak satış grafiğinize yansır. Herhangi bir e-ticaret uygulaması tasarımının ilk adımı, mevcut sonuçlarınızı değerlendirmek ve satışlarınızı artırmak için bir eylem planı yapmaktır. Pazarlama ve web uzmanlığımızdan yararlanarak bu yol haritasını geliştirmenize yardımcı olmak için buradayız.
+                                    Deneyimli tasarımcılardan ve geliştiricilerden oluşan ekibimizle, benzersiz iş ihtiyaçlarınızı anlamak ve markanızı yansıtan, istediğiniz sonuçları sağlayan özel bir e-ticaret uygulaması oluşturmak için sizinle yakın iletişim kurarak süreci etkili bir şekilde yönetiyoruz. E-ticaret stratejinizi şekillendirmek ve dönüşümlerinizi optimize etmek için sorunsuz ve başarılı bir çevrimiçi alışveriş deneyimi oluşturma konusunda incelikle çalışıyoruz. 
+
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item" style="font-size:large">
+                            <img src="/images/endustry.jpg" class="d-block w-100"  style="object-fit: fill;  height:100Vh; opacity:0.6   " />
+                            <div class="carousel-caption d-none d-md-block text-warning">
+                                <h4>
+                                    ENDÜSTRİYEL UYGULAMA VE ENTEGRASYONLAR
+                                </h4>
+                                <h5>
+                                    Kullanım Kolaylığı, İstikrar ve Daha Fazlası
+
+                                </h5>
+                                <p>
+                                    Özel uygulamalar ve entegrasyonlarla endüstriyel süreçlerinizi optimize etme ve düzene sokma konusunda çözüm ortağınız olarak sizlerle birlikte yol alıyoruz. Yalnızca işlevsel değil, aynı zamanda kullanıcı dostu, ölçeklenebilir ve güvenilir çözümler oluşturmak için en son teknolojileri ve en iyi uygulamaları kullanarak tüm süreçleriyle eksiksiz bir endüstriyel uygulama ve entegrasyon hizmetleri yelpazesi sunuyoruz.
+                                    İster basit bir veri görselleştirme aracına, ister karmaşık, çok özellikli bir endüstriyel platforma ihtiyacınız olsun, bunu gerçekleştirecek beceri ve deneyime sahibiz. Devam eden destek ve bakım hizmetlerimizle de çözümlerinizin güncel kalmasını ve en iyi performansı göstermesini sağlıyoruz.
+                                    Yazılım entegrasyonu, güvenilir bir altyapı kullanarak farklı platformlarda çalışan programlar arasındaki iletişimi sağlar. Bu hizmet, ihtiyaca göre veri akışının tek yönlü veya çift yönlü olarak yürütülmesine olanak tanır. İşletmeler için ekstra maliyetleri, işçilik ve zaman kaybını azaltan yazılım entegrasyonu çözümlerini titizlikle yürütüyoruz.
+
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" style="font-size:large">
+                            <img src="/images/blockchainapp.jpg" class="d-block w-100" alt="slide-img-2" style="object-fit: fill;  height:100Vh ; opacity:0.6" />
+                            <div class="carousel-caption d-none d-md-block text-warning">
+                                <h4>
+                                    WEB3 / BLOCKCHAIN ÇÖZÜMLERİ
+
+                                </h4>
+                                <h5>
+                                    Yeni Nesil Web Teknolojisi
+
+                                </h5>
+                                <p>
+                                    İnovasyonu yönlendirmek, yeni iş fırsatları yaratmak, tedarik zinciri yönetimini iyileştirmek, finansal işlemleri kolaylaştırmak veya yeni iş modelleri oluşturmak için Web3 ve Blockchain teknolojisinin gücünden yararlanma konusunda bize güvenebilirsiniz. Deneyimli tasarımcılardan ve geliştiricilerden oluşan ekibimiz, benzersiz ihtiyaçlarınızı anlamak ve Blockchain'in merkezi olmayan, güvenli ve şeffaf doğasından yararlanan özel çözümler oluşturmak için burada.
+                                    Akıllı sözleşme geliştirme, merkezi olmayan uygulama (DApp) tasarımı ve Blockchain entegrasyonu dahil olmak üzere eksiksiz bir Web3 ve Blockchain hizmetleri yelpazesi sunuyoruz. Yalnızca teknik olarak sağlam değil, aynı zamanda kullanıcı dostu ve iş hedeflerinizle uyumlu çözümler oluşturmak için en son teknolojileri ve en iyi uygulamaları kullanıyoruz.
+                                    Blockchain çözümlerimiz ölçeklenebilir, güvenli ve son derece uyarlanabilir olacak şekilde tasarlanmıştır ve kuruluşunuzun bunları mevcut sistemlere ve süreçlere entegre etmesini kolaylaştırır. Ekibinizin çözümlerimizi etkin ve verimli bir şekilde kullanabilmesini sağlamak için kapsamlı eğitim ve destek de sunuyoruz.
+                                     
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item" style="font-size:large">
+                            <img src="/images/sdk-soft-tech-seo.jpg" class="d-block w-100" alt="slide-img-2" style="object-fit: fill;  height:100Vh ; opacity:0.6" />
+                            <div class="carousel-caption d-none d-md-block text-warning">
+                                <h4>
+                                    DİJİTAL PAZARLAMA ÇÖZÜMLERİ
+
+
+                                </h4>
+                                <h5>
+                                    Güçlü, Etkili, Yaratıcı
+                                </h5>
+                                <p>
+                                    İşletmelerin, markaların ya da bireylerin çevrimiçi varlıklarını güçlendirmek ve hedef kitlelerine ulaşmalarına yardımcı olmak için buradayız. Deneyimli profesyonellerden oluşan ekibimiz, son dijital pazarlama trendleri ve teknolojileri hakkında derin bir anlayışa sahiptir ve bu bilgiyi, sonuç veren özelleştirilmiş pazarlama stratejileri oluşturmak için kullanır.
+                                    Hizmetlerimiz, arama motoru optimizasyonu (SEO), sosyal medya pazarlaması, tıklama başına ödeme (PPC) reklamcılığı, e-posta pazarlaması ve çok daha fazlasını içerir. Özel ihtiyaçlarını ve hedeflerini anlamak için müşterilerimizle yakın bir şekilde çalışıyoruz ve her kampanyanın başarılı olmasını sağlamak için veriye dayalı yaklaşımlar kullanıyoruz.
+                                    Çeşitli sosyal medya platformlarının hedef kitlelere ulaşmak ve onlarla etkileşim kurmak için nasıl etkin bir şekilde kullanacağı konusunda etkili bir planlamayla çevrimiçi görünürlüğünüzü artırmak için çalışıyoruz. Strateji geliştirme, içerik oluşturma, topluluk yönetimi ve analitik raporlama gibi sosyal medya yönetimi araçlarını kullanarak hedeflerinize ulaşmanıza yardımcı oluyoruz.
+
+                                </p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-example" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-example" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- End carousel -->
+            </div>
+
         </section>
         <section id="works" class="flex-column">
             <h2>Neler Yapıyoruz</h2>
             <div class="contain">
-                <p  >
-                    <ul class="text-warning">
-                    <ol>OCX AdMobile</ol>
-                    <ol> OCX KamuPort</ol>
-                    </ul>
-                   
+                <p>
+                    <ol class="text-warning">
+                        <li>OCX AdMobile</li>
+                        <li> OCX KamuPort</li>
+                    </ol>
+
                 </p>
             </div>
         </section>
@@ -50,35 +229,35 @@
         <section id="about" class="flex-column">
             <h2>Hakkımızda</h2>
             <div class="container">
-                <p class="text-warning">
+                <p class="text-warning" style="font-size:large">
                     Dijital Dönüşüm Ortağınız
-Dijital dünya her geçen gün daha da hayatımıza yerleşirken markaların ve bireylerin bu yeni dünyada yer bulması oldukça önemli hale geliyor. Overcodex olarak bu noktada müşterilerimizin dijital evrene rahatlıkla uyum sağlamalarını amaç ediniyor, markalara ve bireysel ihtiyaçlara yönelik kreatif ve etkili çözümler üretiyoruz.
-Nitelikli ve yaratıcı tasarımların önemini bilen yenilikçi yazılım ve tasarım ekibimizle birlikte tecrübelerimizi çalışmalarımıza yansıtıyor, her projede bir adım daha ileri gitmeyi hedefliyoruz. Tüm projelerimize hatasız kodlama ve yazılım standartlarına uygun bir bakış açısıyla yaklaşıyoruz.
-Fikirlerinizi ve İhtiyaçlarınızı Yazılım Harikalarına Dönüştüyoruz.
-Dijital ortamda projelerini ön plana çıkarabilmek isteyen markalar ya da kişisel girişimler için web tasarımı, yazılım çözümleri, mobil uygulama geliştirme, dijital pazarlama ve SEO gibi tüm dijital talepler doğrultusunda özgün ve kullanıcı odaklı çözümler geliştiriyoruz. Teknolojiyi yakından takip ve analiz eden ekibimizle birlikte ihtiyaçlarınızın doğru tespitini yaparak sizin için en uygun çözümü üretiyor ve uyguluyoruz.
-İlkeli, Duyarlı, Güvenilir, Yenilikçi ve Rekabetçi
-Hem müşterilerimiz hem de ekibimiz için dinamik, verimli ve şeffaf bir yapıyla sürdürülebilir bir çalışma şeklini benimsiyoruz. Doğru bir organizasyon yapısıyla hareket ederek hayatı kolaylaştıran ve değer yaratan çözümlerle dijital dönüşüm süreçlerinizi profesyonel bir yaklaşımla sürdürüyoruz.
+                    Dijital dünya her geçen gün daha da hayatımıza yerleşirken markaların ve bireylerin bu yeni dünyada yer bulması oldukça önemli hale geliyor. Overcodex olarak bu noktada müşterilerimizin dijital evrene rahatlıkla uyum sağlamalarını amaç ediniyor, markalara ve bireysel ihtiyaçlara yönelik kreatif ve etkili çözümler üretiyoruz.
+                    Nitelikli ve yaratıcı tasarımların önemini bilen yenilikçi yazılım ve tasarım ekibimizle birlikte tecrübelerimizi çalışmalarımıza yansıtıyor, her projede bir adım daha ileri gitmeyi hedefliyoruz. Tüm projelerimize hatasız kodlama ve yazılım standartlarına uygun bir bakış açısıyla yaklaşıyoruz.
+                    Fikirlerinizi ve İhtiyaçlarınızı Yazılım Harikalarına Dönüştüyoruz.
+                    Dijital ortamda projelerini ön plana çıkarabilmek isteyen markalar ya da kişisel girişimler için web tasarımı, yazılım çözümleri, mobil uygulama geliştirme, dijital pazarlama ve SEO gibi tüm dijital talepler doğrultusunda özgün ve kullanıcı odaklı çözümler geliştiriyoruz. Teknolojiyi yakından takip ve analiz eden ekibimizle birlikte ihtiyaçlarınızın doğru tespitini yaparak sizin için en uygun çözümü üretiyor ve uyguluyoruz.
+                    İlkeli, Duyarlı, Güvenilir, Yenilikçi ve Rekabetçi
+                    Hem müşterilerimiz hem de ekibimiz için dinamik, verimli ve şeffaf bir yapıyla sürdürülebilir bir çalışma şeklini benimsiyoruz. Doğru bir organizasyon yapısıyla hareket ederek hayatı kolaylaştıran ve değer yaratan çözümlerle dijital dönüşüm süreçlerinizi profesyonel bir yaklaşımla sürdürüyoruz.
 
 
                 </p>
             </div>
         </section>
-        <section id="carier" class="flex-column">        
-            <div ckass="text-center">
-            <h2>Kariyer</h2>
+        <section id="carier" class="flex-column" >
+            <div class="text-center">
+                <h2>Kariyer</h2>
 
             </div>
             <div class="container my-4                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ">
-                
-                 <p class="text-warning"> 
-                Ekibimize Katıl!
 
-Kariyerinizi büyütmek için heyecan verici bir fırsat arayan yetenekli bir yazılım geliştiricisi veya dijital pazarlama uzmanı mısınız? Overcodex olarak her zaman ekibimize katılacak yetenekli profesyoneller arıyoruz. Yaratıcılığa ve yeniliğe değer veren işbirlikçi bir çalışma kültürü sunuyoruz.
+                <p class="text-warning" style="font-size:large">
+                    Ekibimize Katıl!
 
-Overcodex, çeşitli projeler üzerinde çalışma imkanı bulacağınız ve sektörün en iyi profesyonellerinden öğrenme fırsatına sahip olacağınız dinamik ve şeffaf bir çalışma ortamı sunar. Yazılım geliştirme ve dijital pazarlama konusunda tutkulu olan ve kendini müşterilerimizin başarılı olmasına yardımcı olmaya adamış bir ekibin parçası olmaktan heyecan duyuyorsan bizimle iletişime geç! 
-            </p>
+                    Kariyerinizi büyütmek için heyecan verici bir fırsat arayan yetenekli bir yazılım geliştiricisi veya dijital pazarlama uzmanı mısınız? Overcodex olarak her zaman ekibimize katılacak yetenekli profesyoneller arıyoruz. Yaratıcılığa ve yeniliğe değer veren işbirlikçi bir çalışma kültürü sunuyoruz.
+
+                    Overcodex, çeşitli projeler üzerinde çalışma imkanı bulacağınız ve sektörün en iyi profesyonellerinden öğrenme fırsatına sahip olacağınız dinamik ve şeffaf bir çalışma ortamı sunar. Yazılım geliştirme ve dijital pazarlama konusunda tutkulu olan ve kendini müşterilerimizin başarılı olmasına yardımcı olmaya adamış bir ekibin parçası olmaktan heyecan duyuyorsan bizimle iletişime geç!
+                </p>
             </div>
-           
+
         </section>
 
         <section class="flex-column" id="contact">
@@ -99,18 +278,21 @@ Overcodex, çeşitli projeler üzerinde çalışma imkanı bulacağınız ve sek
                     </h5>
                     <h5 class="contactInfo">
                         <i class="fa-solid fa-envelope text-info"></i>
-                        overcodex@info.com.tr
+                        mail@overcodex.com.tr
                     </h5>
                 </div>
-                <form action="/ " class="  " target="_blank">
+                <form method="post" >
 
-                    <p><input class="form-control   " type="text" placeholder="Name" required name="Name"></p>
-                    <p><input class="form-control  " type="email" placeholder="Email" required name="Email"></p>
-                    <p><input class="form-control  " type="text" placeholder="Subject" required name="Subject"></p>
-                    <p><input class="form-control  " type="text" placeholder="Message" required name="Message"></p>
-
-
-
+                    <p>
+                        <input class="form-control   " type="text" placeholder="Name" required name="Name"></p>
+                    <p>
+                        <input class="form-control  " type="email" placeholder="Email" required id="from" name="from"></p>
+                    <p>
+                        <input class="form-control  " type="text" placeholder="Subject" required id="subject" name="subject"></p>
+                    <p>
+                        <textarea style="font-size:small" rows="3" id="message" class="form-control" name="message" required></textarea>
+                    </p>
+                      
                     <p>
                         <button class="btn btn-info w-100" type="submit">
                             <i class="fa fa-paper-plane"></i> SEND MESSAGE
@@ -118,12 +300,12 @@ Overcodex, çeşitli projeler üzerinde çalışma imkanı bulacağınız ve sek
                     </p>
                 </form>
 
-             </div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1313.5795669406293!2d27.115266851476992!3d38.45910484797486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd9c89440b1e9%3A0x3110b37ef0dbc925!2zQmFoYXJpeWUsIFrDvGJleWRlIEhhbsSxbSBDZC4gTm86MjgvNSwgMzU2MDAgS2FyxZ_EsXlha2EvxLB6bWly!5e0!3m2!1str!2str!4v1697528423720!5m2!1str!2str"
-                            width="60%" height="35%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1313.5795669406293!2d27.115266851476992!3d38.45910484797486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd9c89440b1e9%3A0x3110b37ef0dbc925!2zQmFoYXJpeWUsIFrDvGJleWRlIEhhbsSxbSBDZC4gTm86MjgvNSwgMzU2MDAgS2FyxZ_EsXlha2EvxLB6bWly!5e0!3m2!1str!2str!4v1697528423720!5m2!1str!2str"
+                    width="60%" height="30%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-    </div>
-    </section>
+
+        </section>
     </div>
 
     <script>
@@ -169,4 +351,5 @@ Overcodex, çeşitli projeler üzerinde çalışma imkanı bulacağınız ve sek
         }
     };
 
-</script> 
+</script>
+ 
